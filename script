@@ -1,0 +1,33 @@
+let sonuc;
+
+sonuc = 10;
+sonuc = "10";
+sonuc = Number("10");
+sonuc = parseInt("10.6");
+sonuc = parseFloat("10.6");
+sonuc = parseInt("10a");
+sonuc = parseInt("a10");
+
+sonuc = isNaN("10a");             // yazılan şeyin number olup olmadığını sana söyler
+
+
+let sayi = 15.1234567;
+
+sonuc = sayi.toPrecision(5);      // sayıyı 5 haneli olarak yazar
+sonuc = sayi.toFixed(5);          // tam sayı dışında ondalıklı kısmı 5 haneli yazar
+sonuc = Math.round(2.5);          // hangi sayıya yakınsa o sayıya yuvarlar
+sonuc = Math.ceil(2.5);           // her zaman yukarıya yuvarlar
+sonuc = Math.floor(2.5);          // her zaman aşağıya yuvarlar
+sonuc = Math.sqrt(2.5);           // sayının karekökünü alır
+sonuc = Math.pow(2,3);            //  2 üzeri 3 şeklinde 3 tane 2 yi yan yana çarpar
+sonuc = Math.abs(-10);            // sayının negatifini götürür ve hep pozitif sonuç çıkarır
+sonuc = Math.min(3,5,7,9);        // sayıların arasından en küçüğü seçer
+sonuc = Math.max(3,5,7,9);        // sayıların arasından en büyüğü seçer
+sonuc = Math.random()             // 0 ile 1 arasında rastgele ondalıklı sayı gösterir
+sonuc = Math.floor(Math.random() * 10) + 1;     // 1 ile 10 arasında rastgele tam sayı gösterir
+sonuc = Math.floor(Math.random() * 50) + 50;    // 50 ile 100 arasında rastgele tam sayı gösterir
+sonuc = Math.floor(Math.random() * 100) + 50;     // 50 ile 150 arasında rastgele tam sayı gösterir
+
+
+console.log(typeof sonuc);
+console.log(sonuc);
